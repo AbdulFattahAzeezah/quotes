@@ -44,7 +44,7 @@ const QuoteGrid = () => {
 
 
       {randomQuote && (
-        <div style={{ border: '2px solid #808080', padding: '10px', marginTop: '20px' }}>
+        <div style={{ border: '2px solid #808080', padding: '10px', marginTop: '20px'}}>
           <p>{randomQuote.id}</p>
           <p> Quote: {randomQuote.quote}</p>
           <p>Author: {randomQuote.author}</p>
@@ -60,12 +60,12 @@ const QuoteGrid = () => {
       </div>
 
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginTop: '20px', background: 'url(./Components/Assets/download.jpg)' }}>
+      <div style={{ backgroundRepeat:'no-repeat', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginTop: '20px'}}>
         {quotes.map(quote => (
-          <div key={quote.id} style={{ border: '2px solid #008cba', padding: '10px' }}>
-            <p>{quote.id}</p>
-            <p>{quote.quote}</p>
-            <p>Author: {quote.author}</p>
+          <div key={quote.id} style={{ border: '3px solid black', padding: '10px' , backgroundImage: 'url("https://t3.ftcdn.net/jpg/02/79/34/20/360_F_279342048_F5NFddwEW19MJsVev4UvjmUne5JgSPqY.jpg")',backgroundRepeat: 'no-repeat'}}>
+            <p style={{color: 'white'}}>{quote.id}</p>
+            <p style={{fontFamily: 'Dancing Script, cursive',color: 'white',marginBottom: '20px'}}>{quote.quote}</p>
+            <p style={{fontFamily: 'roboto',color: 'white'}}>Author: {quote.author}</p>
           </div>
         ))}
       </div>
