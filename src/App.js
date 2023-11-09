@@ -50,9 +50,9 @@ const QuoteGrid = () => {
 
       {randomQuote && (
         <div style={{ border: '3px solid black', padding: '10px', marginTop: '20px'}}>
-          <p>{randomQuote.id}</p>
-          <p> Quote: {randomQuote.quote}</p>
-          <p>Author: {randomQuote.author}</p>
+          <p style={{color: 'black'}}>{randomQuote.id}</p>
+          <p style={{fontFamily: 'Dancing Script, cursive',color: 'black',marginBottom: '20px',fontWeight:'bold'}}> Quote: {randomQuote.quote}</p>
+          <p style={{fontFamily: 'roboto',color: 'black',fontWeight:'normal'}}>Author: {randomQuote.author}</p>
         </div>
 
       )}
